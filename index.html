@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id='body'>
+
+    <div id='main'><img id='img' src="./cooltext378389582360952.png"></div>
+
+    <br><br><br><br><br><br><br>
+<div id='flex'>
+    <div id='div1' class='item'>
+        <p class="p1"> Coloque aqui os nomes dos seus jogadores  </p>
+        <div id='error1'class="error hide">Pelo menos 3 jogadores!</div><br>
+        <input   id="input" type="text"  maxlength="25" >
+        <input   id="button" class='btn' onclick= "addItem() "   value="ADD" id="button" type="submit">
+        <ul  id='list'></ul>
+        <br>
+        <input   id="buttonNext1" class='btn' onclick= "Next1()"   value="Pronto!" id="button" type="submit">
+    </div>
+
+    <div id='div2' class="item hide">
+        <p class="p1">Quais dias eles podem jogar?</p> <br>
+        <ul  id='list2'></ul>
+        <input   id="button1" onclick= "Next2()"  class='btn'  value="Pronto!" id="button" type="submit">
+    </div>
+
+    <div id='div3' class="item hide">
+        <p class="p1" id='textDesempate'>De 0 a 10, em uma situação hipotética, se você tivesse uma faca na sua mão e este jogador estivesse na sua frente, quantos reais ele teria que te pagar para você não esfaquear ele?</p> <br>
+       (dica: jogadores que você odeia teriam que pagar mais)
+        <ul  id='list3'></ul>
+        <input id="button2" onclick= "next3()"  class='btn' value="Pronto!" id="button" type="submit">
+    </div>
+</div>
+
+<div id='resultSexta' class='dia hide'><img src="./cooltext378388675269498.png"></div>
+<div id='resultSabado' class='dia hide'><img src="./cooltext378388986180149.png"></div>
+
+<img id='btnReset' class="btn reset" onclick="Reload()" title="Reset" src="./2x/round_settings_backup_restore_black_18dp.png">
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
